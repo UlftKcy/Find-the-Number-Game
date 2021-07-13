@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess The Number Game</title>
+  </head>
+
+  <body>
+    <section>
+      <div id="game-container">
+        <div id="header">
+          <h1>Guess The Number (1 - 100)</h1>
+        </div>
+        <div class="box">
+          <input
+            type="text"
+            name="number"
+            id="form-input"
+            autocomplete="off"
+            value=""
+          />
+          <button class="btn" onClick="onClick()">Check</button>
+          <input type="reset" value="Reset" class="reset" />
+          <p class="message"></p>
+        </div>
+        <div id="game-image">
+          <img src="./img/hat.png" alt="hat-image" />
+        </div>
+        <div class="text-body">
+          <p class="write">Write the number</p>
+          <p class="attempt">
+            Number of attempts <span id="attempt-number">0</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
